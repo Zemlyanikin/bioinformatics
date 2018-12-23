@@ -17,8 +17,7 @@ int main()
 		if (MainString[i] == SubString[0])
 			if (MainString.substr(i, SubString.length()) == SubString)
 			{
-				++count;
-				//i += SubString.length() - 1;
+				count++;
 			}
 	}
 	cout << count;
