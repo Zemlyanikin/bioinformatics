@@ -1,0 +1,27 @@
+#include  <iostream>
+#include <string>
+
+using namespace std;
+
+int main()
+{
+	string MainString, SubString;
+	int count = 0;
+
+	getline(cin, SubString);
+	cout << endl;
+	getline(cin, MainString);
+
+	for (int i = 0; i < MainString.length(); ++i)
+	{
+		if (MainString[i] == SubString[0])
+			if (MainString.substr(i, SubString.length()) == SubString)
+			{
+				++count;
+				//i += SubString.length() - 1;
+			}
+	}
+	cout << count;
+	return 0;
+}
+
